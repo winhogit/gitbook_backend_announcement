@@ -58,50 +58,50 @@ sequenceDiagram
     announcementManage ->>- client: 顯示公告管理列表
     end
     rect rgb(50, 50, 50)
-    note right of client: 建立公告資料
-    client ->>+ announcementManage: 建立公告資料
-    announcementManage ->> client: 顯示公告編輯表單
-    client ->> announcementManage: 輸入公告資料
-    announcementManage -)+ redux: 發佈公告資料至狀態
-    redux ->> redux: 處理公告資料狀態
-    redux -)- announcementManage: 回應公告狀態
-    announcementManage ->> client: 響應公告表單變動
-    client ->> announcementManage: 儲存公告資料
-    announcementManage -)+ redux: 發佈公告儲存請求
-    redux -)+ backend: 請求公告資料儲存
-    backend -)- redux: 回應公告儲存結果
-    redux ->> redux: 更新公告資料狀態
-    redux -)- announcementManage: 回應公告儲存結果
-    announcementManage ->>- client: 顯示已儲存公告資料
+    note right of client: 建立公告區塊資料
+    client ->>+ announcementManage: 建立公告區塊資料
+    announcementManage ->> client: 顯示公告區塊編輯表單
+    client ->> announcementManage: 輸入公告區塊資料
+    announcementManage -)+ redux: 發佈公告區塊資料至狀態
+    redux ->> redux: 處理公告區塊資料狀態
+    redux -)- announcementManage: 回應公告區塊狀態
+    announcementManage ->> client: 響應公告區塊表單變動
+    client ->> announcementManage: 儲存公告區塊資料
+    announcementManage -)+ redux: 發佈公告區塊儲存請求
+    redux -)+ backend: 請求公告區塊資料儲存
+    backend -)- redux: 回應公告區塊儲存結果
+    redux ->> redux: 更新公告區塊資料狀態
+    redux -)- announcementManage: 回應公告區塊儲存結果
+    announcementManage ->>- client: 顯示已儲存公告區塊資料
     end
     rect rgb(80, 80, 80)
-    note right of client: 更新公告資料
-    client ->>+ announcementManage: 更新公告資料
-    announcementManage -)+ redux: 發佈單一公告資料請求
-    redux -)+ backend: 請求單一公告資料
-    backend -)- redux: 回應單一公告資料
-    redux ->> redux: 處理公告資料狀態
-    redux -)- announcementManage: 回應公告狀態
-    announcementManage ->> client: 顯示公告編輯表單
-    client ->> announcementManage: 輸入公告資料
-    announcementManage -)+ redux: 發佈公告資料至狀態
-    redux ->> redux: 處理公告資料狀態
-    redux -)- announcementManage: 回應公告狀態
-    announcementManage ->> client: 響應公告表單變動
-    client ->> announcementManage: 儲存公告資料
-    announcementManage -)+ redux: 發佈公告儲存請求
-    redux -)+ backend: 請求公告資料儲存
-    backend -)- redux: 回應公告儲存結果
-    redux ->> redux: 更新公告資料狀態
-    redux -)- announcementManage: 回應公告儲存結果
-    announcementManage ->>- client: 顯示已儲存公告資料
+    note right of client: 更新公告區塊資料
+    client ->>+ announcementManage: 更新公告區塊資料
+    announcementManage -)+ redux: 發佈公告區塊資料請求
+    redux -)+ backend: 請求公告區塊資料
+    backend -)- redux: 回應公告區塊資料
+    redux ->> redux: 處理公告區塊資料狀態
+    redux -)- announcementManage: 回應公告區塊狀態
+    announcementManage ->> client: 顯示公告區塊編輯表單
+    client ->> announcementManage: 輸入公告區塊資料
+    announcementManage -)+ redux: 發佈公告區塊資料至狀態
+    redux ->> redux: 處理公告區塊資料狀態
+    redux -)- announcementManage: 回應公告區塊狀態
+    announcementManage ->> client: 響應公告區塊表單變動
+    client ->> announcementManage: 儲存公告區塊資料
+    announcementManage -)+ redux: 發佈公告區塊儲存請求
+    redux -)+ backend: 請求公告區塊資料儲存
+    backend -)- redux: 回應公告區塊儲存結果
+    redux ->> redux: 更新公告區塊資料狀態
+    redux -)- announcementManage: 回應公告區塊儲存結果
+    announcementManage ->>- client: 顯示已儲存公告區塊資料
     end
     rect rgb(40, 40, 40)
-    note right of client: 刪除公告資料
-    client ->>+ announcementManage: 刪除公告資料
-    announcementManage -)+ redux: 發佈公告資料刪除請求
-    redux -)+ backend: 請求公告刪除
-    backend -)- redux: 回應公告刪除結果
+    note right of client: 刪除公告區塊資料
+    client ->>+ announcementManage: 刪除公告區塊資料
+    announcementManage -)+ redux: 發佈公告區塊資料刪除請求
+    redux -)+ backend: 請求公告區塊刪除
+    backend -)- redux: 回應公告區塊刪除結果
     redux ->> redux: 更新公告列表資料狀態
     redux -)- announcementManage: 回應公告列表狀態
     announcementManage ->>- client: 顯示更新後公告列表

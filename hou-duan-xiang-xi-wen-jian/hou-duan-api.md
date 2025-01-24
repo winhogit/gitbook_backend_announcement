@@ -1,5 +1,9 @@
 # 後端 API
 
+## 公告列表
+
+
+
 ## 建立公告
 
 <mark style="color:green;">`POST`</mark> `/api/shopadmin/announcement`
