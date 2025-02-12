@@ -1,8 +1,116 @@
 # 後端 API
 
-## 公告列表
+## 取得公告區塊列表資料
 
+<mark style="color:green;">`GET`</mark> `/api/shopadmin/announcements`
 
+**Headers**
+
+| Name          | Value              |
+| ------------- | ------------------ |
+| Content-Type  | `application/json` |
+| Authorization | `Bearer <token>`   |
+
+**Body**
+
+| Name   | Type    | Description |
+| ------ | ------- | ----------- |
+| `page` | integer | 分頁頁次        |
+| `rows` | integer | 每頁顯示數量      |
+
+**Response**
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+  "success": {
+    "current_page": 1,
+    "data": [
+      {
+        "id": 1,
+        "title": "Announcement title",
+        "content": "Announcement content",
+        "status": true,
+        "all_site": true,
+        "all_lang": true
+      },
+      {
+        "id": 2,
+        "title": "Announcement title 2",
+        "content": "Announcement content 2",
+        "status": true,
+        "all_site": false,
+        "all_lang": true
+      },
+      ....
+    ],
+    "per_page": 15,
+    "total": 30
+  }
+}
+```
+{% endtab %}
+
+{% tab title="401" %}
+```json
+{
+  "error": {
+    "message": "Unauthorized"
+  }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+## 取得公告區塊資料
+
+<mark style="color:green;">`GET`</mark> `/api/shopadmin/announcement`
+
+**Headers**
+
+| Name          | Value              |
+| ------------- | ------------------ |
+| Content-Type  | `application/json` |
+| Authorization | `Bearer <token>`   |
+
+**Body**
+
+| Name | Type    | Description |
+| ---- | ------- | ----------- |
+| `id` | integer | 公告區塊資料 id   |
+
+**Response**
+
+{% tabs %}
+{% tab title="200" %}
+```json
+
+{
+  "success": {
+    {
+      "id": 1,
+      "title": "Announcement title",
+      "content": "Announcement content",
+      "status": true,
+      "all_site": true,
+      "all_lang": true
+    }
+  }
+}
+```
+{% endtab %}
+
+{% tab title="400" %}
+```json
+{
+  "error": {
+    "message": "Unauthorized"
+  }
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## 建立公告
 
