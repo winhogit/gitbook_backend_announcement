@@ -6,7 +6,7 @@ description: 更新公告區塊關聯站台
 
 {% code fullWidth="false" %}
 ```php
-public updateSites(int $announcementId, array $siteIds): DBCollection
+public updateSites(int $announcementId, array $siteIds): bool
 ```
 {% endcode %}
 

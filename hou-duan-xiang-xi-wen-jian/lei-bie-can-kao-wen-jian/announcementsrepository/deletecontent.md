@@ -6,7 +6,7 @@ description: 刪除公告區塊內容
 
 {% code fullWidth="false" %}
 ```php
-public deleteContent(int $announcementId, string $backendLang): DBCollection
+public deleteContent(int $announcementId, string $backendLang): bool
 ```
 {% endcode %}
 

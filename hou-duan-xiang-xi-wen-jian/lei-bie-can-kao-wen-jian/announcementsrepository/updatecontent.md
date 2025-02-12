@@ -6,18 +6,18 @@ description: 更新公告區塊內容
 
 {% code fullWidth="false" %}
 ```php
-public updateContent(string $title, string $content, string $backendLang, ?int $announcementId): DBCollection
+public updateContent(string $title, string $content, string $backendLang, int $announcementId): bool
 ```
 {% endcode %}
 
 #### Parameters
 
-| type      | name            | comment      |
-| --------- | --------------- | ------------ |
-| string    | $title          | 公告區塊抬頭       |
-| string    | $content        | 公告區塊內文       |
-| string    | $backendLang    | 公告區塊內容語系     |
-| int\|null | $announcementId | 公告 id；新建內容留空 |
+| type   | name            | comment  |
+| ------ | --------------- | -------- |
+| string | $title          | 公告區塊抬頭   |
+| string | $content        | 公告區塊內文   |
+| string | $backendLang    | 公告區塊內容語系 |
+| int    | $announcementId | 公告 id    |
 
 #### **Return Value**
 
