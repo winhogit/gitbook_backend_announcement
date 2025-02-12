@@ -1,11 +1,11 @@
 ---
-description: 列出公告區塊資料 API
+description: 後台首頁顯示用列出公告區塊資料 API
 ---
 
 # fetch()
 
 ```php
-public fetch(Request $request): Response
+後台首頁public fetch(Request $request): Response
 ```
 
 #### Parameters

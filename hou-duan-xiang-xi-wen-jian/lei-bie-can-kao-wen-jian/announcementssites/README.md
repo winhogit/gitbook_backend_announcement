@@ -2,7 +2,7 @@
 description: 後台公告區塊關聯站台模組
 ---
 
-# AnnouncementsSitesModel
+# AnnouncementsSites
 
 ### Namespace
 
@@ -42,4 +42,4 @@ protected array $fillable = [
 
 ### Methods
 
-* [relatedAnnouncement()](../announcementscontentmodel/relatedannouncement.md)
+* [relatedAnnouncement()](../announcementscontent/relatedannouncement.md)

@@ -11,6 +11,6 @@ description: Class reference document
 * Repository
   * [AnnouncementsRepository](announcementsrepository/)
 * Model
-  * [AnnouncementsModel](announcementsmodel/)
-  * [AnnouncementsContentModel](announcementscontentmodel/)
-  * [AnnouncementsSitesModel](announcementssitesmodel/)
+  * [AnnouncementsModel](announcements/)
+  * [AnnouncementsContentModel](announcementscontent/)
+  * [AnnouncementsSitesModel](announcementssites/)

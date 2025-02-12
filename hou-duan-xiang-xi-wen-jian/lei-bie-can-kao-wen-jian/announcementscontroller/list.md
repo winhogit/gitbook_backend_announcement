@@ -1,5 +1,5 @@
 ---
-description: 列出公告區塊資料 API
+description: 後台管理用列出公告區塊資料 API
 ---
 
 # list()
