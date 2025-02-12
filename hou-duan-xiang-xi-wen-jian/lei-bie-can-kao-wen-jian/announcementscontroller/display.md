@@ -1,11 +1,12 @@
 ---
-description: 後台管理用列出公告區塊資料 API
+description: 後台首頁顯示用列出公告區塊資料 API
 ---
 
-# list()
+# display()
 
-<pre class="language-php"><code class="lang-php"><strong>public list(Request $request): Response
-</strong></code></pre>
+```php
+後台首頁public display(Request $request): Response
+```
 
 #### Parameters
 

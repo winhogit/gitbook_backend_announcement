@@ -1,12 +1,11 @@
 ---
-description: 後台首頁顯示用列出公告區塊資料 API
+description: 後台管理用取出單一公告區塊資料 API
 ---
 
 # fetch()
 
-```php
-後台首頁public fetch(Request $request): Response
-```
+<pre class="language-php"><code class="lang-php"><strong>public list(Request $request): Response
+</strong></code></pre>
 
 #### Parameters
 
@@ -17,3 +16,4 @@ description: 後台首頁顯示用列出公告區塊資料 API
 #### **Return Value**
 
 <table><thead><tr><th width="247">type</th><th>comment</th></tr></thead><tbody><tr><td>Illuminate\Http\Response</td><td>Laravel 回應實例</td></tr></tbody></table>
+
