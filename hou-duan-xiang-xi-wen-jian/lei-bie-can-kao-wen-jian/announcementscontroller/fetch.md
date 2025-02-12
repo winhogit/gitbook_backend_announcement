@@ -4,7 +4,7 @@ description: 後台管理用取出單一公告區塊資料 API
 
 # fetch()
 
-<pre class="language-php"><code class="lang-php"><strong>public list(Request $request): Response
+<pre class="language-php"><code class="lang-php"><strong>public fetch(Request $request): Response
 </strong></code></pre>
 
 #### Parameters

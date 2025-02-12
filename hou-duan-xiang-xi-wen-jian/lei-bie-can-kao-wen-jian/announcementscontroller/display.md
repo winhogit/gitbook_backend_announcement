@@ -5,7 +5,7 @@ description: 後台首頁顯示用列出公告區塊資料 API
 # display()
 
 ```php
-後台首頁public display(Request $request): Response
+public display(Request $request): Response
 ```
 
 #### Parameters
