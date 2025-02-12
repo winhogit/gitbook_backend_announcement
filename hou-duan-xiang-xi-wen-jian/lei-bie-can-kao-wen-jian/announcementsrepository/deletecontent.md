@@ -19,4 +19,4 @@ public deleteContent(int $announcementId, string $backendLang): DBCollection
 
 #### **Return Value**
 
-<table data-full-width="false"><thead><tr><th width="371">type</th><th>comment</th></tr></thead><tbody><tr><td>Illuminate\Database\Eloquent\Collection</td><td>公告區塊內容集合<br>[ { id, announcement_id, backend_lang, title, content }, ....  ]</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="371">type</th><th>comment</th></tr></thead><tbody><tr><td>bool</td><td>是否完成</td></tr></tbody></table>

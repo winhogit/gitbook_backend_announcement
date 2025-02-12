@@ -20,8 +20,6 @@
       * [\_\_construct()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementsservice/__construct.md)
       * [fetch()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementsservice/fetch.md)
       * [list()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementsservice/list.md)
-      * [fetchContent()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementsservice/fetchcontent.md)
-      * [fetchSites()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementsservice/fetchsites.md)
       * [updateAnnouncement()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementsservice/updateannouncement.md)
     * [AnnouncementsRepository](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementsrepository/README.md)
       * [\_\_construct()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementsrepository/__construct.md)

@@ -45,6 +45,4 @@ App\Repositories\AnnouncementsRepository $announcementsRepository
 * [\_\_construct()](__construct.md)
 * [list()](list.md)
 * [fetch()](fetch.md)
-* [fetchContent()](fetchcontent.md)
-* [fetchSites()](fetchsites.md)
 * [updateAnnouncement()](updateannouncement.md)

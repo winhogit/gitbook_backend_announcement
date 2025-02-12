@@ -19,4 +19,4 @@ public updateSites(int $announcementId, array $siteIds): DBCollection
 
 #### **Return Value**
 
-<table><thead><tr><th width="357">type</th><th>comment</th></tr></thead><tbody><tr><td>Illuminate\Database\Eloquent\Collection</td><td>公告區塊關聯站台集合<br>[ { id, name }, { id, name }, .... ]</td></tr></tbody></table>
+<table><thead><tr><th width="357">type</th><th>comment</th></tr></thead><tbody><tr><td>bool</td><td>是否完成</td></tr></tbody></table>
