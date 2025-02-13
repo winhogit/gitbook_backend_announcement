@@ -308,7 +308,64 @@
         "description": "管理介面更新公告區塊資料",
         "operationId": "put-announcements-manage",
         "requestBody": {
-          "$ref": "#/components/requestBodies/id"
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "description": "公告區塊 id",
+                    "format": "int64",
+                    "minimum": 1,
+                    "examples": [
+                      1
+                    ]
+                  },
+                  "status": {
+                    "$ref": "#/components/schemas/status"
+                  },
+                  "all_site": {
+                    "$ref": "#/components/schemas/all_site"
+                  },
+                  "all_lang": {
+                    "$ref": "#/components/schemas/all_lang"
+                  },
+                  "sites": {
+                    "$ref": "#/components/schemas/sites_2"
+                  },
+                  "contents": {
+                    "$ref": "#/components/schemas/contents_2"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "examples": {
+                "Example": {
+                  "value": {
+                    "id": 1,
+                    "status": false,
+                    "all_site": false,
+                    "all_lang": false,
+                    "contents": [
+                      {
+                        "title": "中文公告標題",
+                        "content": "中文公告內容",
+                        "backend_lang": "zh-tw"
+                      },
+                      {
+                        "title": "英文公告標題",
+                        "content": "中文公告內容",
+                        "backend_lang": "en"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
         },
         "responses": {
           "200": {
@@ -714,6 +771,43 @@
           "created_at",
           "updated_at"
         ]
+      },
+      "sites_2": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "description": "公告區塊顯示站台 id 陣列",
+        "items": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "contents_2": {
+        "type": "array",
+        "description": "公告區塊各語系資料",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "公告區塊標題"
+            },
+            "content": {
+              "type": "string",
+              "description": "公告區塊內容"
+            },
+            "backend_lang": {
+              "type": "string",
+              "description": "所屬後台語系標記"
+            }
+          },
+          "required": [
+            "title",
+            "content",
+            "backend_lang"
+          ]
+        }
       }
     }
   },
