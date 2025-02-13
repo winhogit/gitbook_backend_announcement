@@ -12,10 +12,10 @@ public updateAnnouncement(?int $announcementId, bool $status, bool $allSites, bo
 
 | type      | name            | comment          |
 | --------- | --------------- | ---------------- |
+| int\|null | $announcementId | 公告 id；新建公告留空     |
 | bool      | $status         | 啟用狀態；預設 false    |
 | bool      | $allSites       | 全站台顯示狀態；預設 false |
 | bool      | $allBackendLang | 全語系顯示狀態；預設 false |
-| int\|null | $announcementId | 公告 id；新建公告留空     |
 
 #### **Return Value**
 
