@@ -18,7 +18,7 @@ public updateAnnouncement(?int $announcementId, bool $status, bool $allSites, bo
 | bool      | $status         | 啟用狀態；預設 false    |
 | bool      | $allSites       | 全站台顯示狀態；預設 false |
 | bool      | $allLang        | 全語系顯示狀態；預設 false |
-| object\[] | $contents       | 公告區塊內容陣列         |
+| array     | $contents       | 公告區塊內容陣列         |
 | int\[]    | $sites          | 站台 id 陣列         |
 
 #### **Return Value**
