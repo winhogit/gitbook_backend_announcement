@@ -462,6 +462,54 @@
           }
         ]
       }
+    },
+    "/announcements/manage/fetch": {
+      "get": {
+        "tags": [
+          "fetch"
+        ],
+        "summary": "單一公告區塊資料",
+        "description": "管理介面取得單一公告區塊資料",
+        "operationId": "get-announcements-manage-fetch",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/id"
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "$ref": "#/components/schemas/announcement"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          }
+        },
+        "security": [
+          {
+            "token": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://www.winshop.tw/api/shopadmin",
+            "description": "Production"
+          },
+          {
+            "url": "http://www.winshop.test/api/shopadmin",
+            "description": "Development"
+          }
+        ]
+      }
     }
   },
   "tags": [
@@ -716,19 +764,11 @@
           "name": {
             "type": "string",
             "description": "站台名稱"
-          },
-          "created_at": {
-            "$ref": "#/components/schemas/created_at"
-          },
-          "updated_at": {
-            "$ref": "#/components/schemas/updated_at"
           }
         },
         "required": [
           "id",
-          "name",
-          "created_at",
-          "updated_at"
+          "name"
         ]
       },
       "contents": {
@@ -736,11 +776,6 @@
         "title": "contents",
         "description": "公告區塊各語系內容格式",
         "properties": {
-          "id": {
-            "type": "integer",
-            "description": "公告區塊內容 id",
-            "minimum": 1
-          },
           "backend_lang": {
             "type": "string",
             "description": "後台語系標記",
@@ -755,21 +790,12 @@
           "content": {
             "type": "string",
             "description": "公告區塊內容"
-          },
-          "created_at": {
-            "$ref": "#/components/schemas/created_at"
-          },
-          "updated_at": {
-            "$ref": "#/components/schemas/updated_at"
           }
         },
         "required": [
-          "id",
           "backend_lang",
           "title",
-          "content",
-          "created_at",
-          "updated_at"
+          "content"
         ]
       },
       "sites_2": {

@@ -20,3 +20,7 @@
 [winshop-announcements.json](../.gitbook/assets/winshop-announcements.json)
 {% endswagger %}
 
+{% swagger src="../.gitbook/assets/winshop-announcements.json" path="/announcements/manage/fetch" method="get" %}
+[winshop-announcements.json](../.gitbook/assets/winshop-announcements.json)
+{% endswagger %}
+
