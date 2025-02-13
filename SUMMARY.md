@@ -34,7 +34,7 @@
     * [Announcements](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcements/README.md)
       * [relatedContent()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcements/relatedcontent.md)
       * [relatedSites()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcements/relatedsites.md)
-      * [getContentAttribute()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcements/getcontentattribute.md)
+      * [getContentsAttribute()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcements/getcontentsattribute.md)
       * [getSitesAttribute()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcements/getsitesattribute.md)
     * [AnnouncementsContent](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementscontent/README.md)
       * [relatedAnnouncement()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementscontent/relatedannouncement.md)

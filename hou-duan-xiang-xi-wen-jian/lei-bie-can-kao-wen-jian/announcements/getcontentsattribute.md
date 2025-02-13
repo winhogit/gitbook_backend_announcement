@@ -2,10 +2,10 @@
 description: 關聯公告區塊內容資料存取器
 ---
 
-# getContentAttribute()
+# getContentsAttribute()
 
 ```php
-public getContentAttribute(): DBCollection
+public getContentsAttribute(): DBCollection
 ```
 
 #### Parameters

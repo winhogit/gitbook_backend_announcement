@@ -2,7 +2,7 @@
 description: 後台公告資料模組
 ---
 
-# AnnouncementsModel
+# Announcements
 
 ### Namespace
 
@@ -56,5 +56,5 @@ protected array $hidden = [
 
 * [relatedContent()](relatedcontent.md)
 * [relatedSites()](relatedsites.md)
-* [getContentAttribute()](getcontentattribute.md)
+* [getContentAttribute()](getcontentsattribute.md)
 * [getSitesAttribute()](getsitesattribute.md)
