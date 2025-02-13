@@ -5,7 +5,7 @@ description: 建立、更新，單一公告區塊資料
 # updateAnnouncement()
 
 ```php
-public updateAnnouncement(bool $status, bool $allSites, bool $allBackendLang, ?int $announcementId): DBCollection
+public updateAnnouncement(?int $announcementId, bool $status, bool $allSites, bool $allBackendLang): DBCollection
 ```
 
 #### Parameters
