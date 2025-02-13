@@ -4,8 +4,10 @@ description: 建立、更新，單一公告區塊資料
 
 # updateAnnouncement()
 
+
+
 ```php
-public updateAnnouncement(?int $announcementId, bool $status, bool $allSites, bool $allBackendLang): DBCollection
+public updateAnnouncement(?int $announcementId, bool $status, bool $allSites, bool $allLang, array $contents, array $sites): DBCollection
 ```
 
 #### Parameters
@@ -15,7 +17,9 @@ public updateAnnouncement(?int $announcementId, bool $status, bool $allSites, bo
 | int\|null | $announcementId | 公告 id；新建公告留空     |
 | bool      | $status         | 啟用狀態；預設 false    |
 | bool      | $allSites       | 全站台顯示狀態；預設 false |
-| bool      | $allBackendLang | 全語系顯示狀態；預設 false |
+| bool      | $allLang        | 全語系顯示狀態；預設 false |
+| object\[] | $contents       | 公告區塊內容陣列         |
+| int\[]    | $sites          | 站台 id 陣列         |
 
 #### **Return Value**
 
