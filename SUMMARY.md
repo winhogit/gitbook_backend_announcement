@@ -41,6 +41,7 @@
       * [relatedAnnouncement()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementscontent/relatedannouncement.md)
     * [AnnouncementsSites](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementssites/README.md)
       * [relatedAnnouncement()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementssites/relatedannouncement.md)
+      * [relatedSite()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementssites/relatedsite.md)
   * [後端 API](hou-duan-xiang-xi-wen-jian/hou-duan-api.md)
 * [前端詳細文件](qian-duan-xiang-xi-wen-jian/README.md)
   * [React 元件圖](qian-duan-xiang-xi-wen-jian/react-yuan-jian-tu.md)
