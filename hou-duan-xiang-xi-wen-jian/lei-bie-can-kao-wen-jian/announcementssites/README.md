@@ -42,5 +42,5 @@ protected array $fillable = [
 
 ### Methods
 
-* [relatedAnnouncement()](../announcementscontent/relatedannouncement.md)
+* [relatedAnnouncement()](relatedannouncement.md)
 * [relatedSite()](relatedsite.md)
