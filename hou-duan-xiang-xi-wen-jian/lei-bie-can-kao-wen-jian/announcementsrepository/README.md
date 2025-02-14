@@ -13,8 +13,8 @@ App\Repositories
 ### Imports
 
 ```php
-Illuminate\Database\Eloquent\Collection as DBCollection
-Kalnoy\Nestedset\Collection
+App\Models\Announcements_content as AnnouncementsContent;
+App\Models\Announcements_sites as AnnouncementsSites;
 ```
 
 ### Inheritance

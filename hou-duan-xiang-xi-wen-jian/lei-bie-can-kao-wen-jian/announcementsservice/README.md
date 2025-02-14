@@ -15,7 +15,7 @@ App\Services
 ```php
 Illuminate\Pagination\LengthAwarePaginator
 Illuminate\Database\Eloquent\Collection as DBCollection
-Kalnoy\Nestedset\Collection
+App\Repositories\AnnouncementsRepository
 ```
 
 ### Inheritance

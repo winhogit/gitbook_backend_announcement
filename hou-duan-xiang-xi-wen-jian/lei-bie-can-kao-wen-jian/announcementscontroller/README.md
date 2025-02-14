@@ -14,7 +14,7 @@ App\Http\Controllers\Api\Backend
 
 ```php
 Illuminate\Http\Request
-Illuminate\Http\Response
+Illuminate\Http\JsonResponse
 ```
 
 ### Inheritance
@@ -27,7 +27,6 @@ App\Http\Controllers\AbstractController
 
 ```php
 App\Services\AnnouncementsService $announcementsService
-App\Repositories\AnnouncementsRepository $announcementsRepository
 ```
 
 ### Properties
