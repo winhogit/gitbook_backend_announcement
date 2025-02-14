@@ -13,27 +13,22 @@ classDiagram
     AnnouncementsController ..> AnnouncementsService
     AnnouncementsController ..> AnnouncementsRepository
     AnnouncementsService ..> AnnouncementsRepository
-    AnnouncementsRepository ..> AnnouncementsModel
-    AnnouncementsRepository ..> AnnouncementsContentModel
-    AnnouncementsRepository ..> AnnouncementsSitesModel
-    AnnouncementsModel "1" o-- "1..*" AnnouncementsContentModel
-    AnnouncementsModel "1" o-- "0..*" AnnouncementsSitesModel
+    AnnouncementsRepository ..> Announcements
+    AnnouncementsRepository ..> AnnouncementsContent
+    AnnouncementsRepository ..> AnnouncementsSites
+    Announcements "1" o-- "1..*" AnnouncementsContent
+    Announcements "1" o-- "0..*" AnnouncementsSites
     namespace App.Http.Controllers.Api.Backend {
         class AnnouncementsController {
             <<Controller>>
             # AnnouncementsService $announcementsService
-            # AnnouncementsRepository $announcementsRpository
             + __construct()
+            + display()
             + list()
             + fetch()
-            + fetchContent()
-            + fetchSites()
             + createAnnouncement()
             + updateAnnouncement()
-            + updateContent()
-            + updateSites()
             + deleteAnnouncement()
-            + deleteContent()
         }
     }
     namespace App.Services {
@@ -41,49 +36,50 @@ classDiagram
             <<Service>>
             # AnnouncementsRepository $announcementsRepository
             + __construct()
+            + display()
             + list(int $page, int $rows)
             + fetch(int $announcementId)
-            + fetchContent(int $announcementId)
-            + fetchSites(int $announcementId)
-            + updateAnnouncement(bool $status, bool $allSites, bool $allBackendLang, ?int $announcementId)
+            + updateAnnouncement(?int $announcementId, bool $status, bool $allSites, bool $allLang, array $contents, array $sites)
+            + deleteAnnouncement(int $announcementId)
         }
     }
     namespace App.Repositories {
         class AnnouncementsRepository {
             <<Repository>>
-            # AnnouncementsContentModel $contentModel
-            # AnnouncementsSitesModel $sitesModel
             + __construct()
             + factory()
             + status()
-            + deleteAnnouncement(int $announcementId)
-            + updateContent(string $title, string $content, string $backendLang, ?int $announcementId)
+            + updateContent(string $title, string $content, string $backendLang, int $announcementId)
             + deleteContent(int $announcementId, string $backendLang)
             + updateSites(int $announcementId, array $siteIds)
+            + deleteAnnouncement(int $announcementId)
         }
     }
     namespace App.Models {
-        class AnnouncementsModel {
+        class Announcements {
             <<Model>>
             # string $table
             # array $fillable
             # array $casts
+            # array $appends
             # array $hidden
             + relatedContent()
             + relatedSites()
-            + getContentAttribute()
+            + getContentsAttribute()
             + getSitesAttribute()
         }
-        class AnnouncementsContentModel {
+        class AnnouncementsContent {
             <<Model>>
             # string $table
             # array $fillable
+            # array $hidden
             + relatedAnnouncement()
         }
-        class AnnouncementsSitesModel {
+        class AnnouncementsSites {
             <<Model>>
             # string $table
             # array $fillable
+            # array $hidden
             + relatedAnnouncement()
             + relatedSite()
         }
