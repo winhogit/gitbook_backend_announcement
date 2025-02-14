@@ -5,7 +5,7 @@ description: 後台首頁顯示用列出公告區塊資料
 # display
 
 ```php
-public display(int $announcementId): DBCollection
+public display(int $announcementId): Collection
 ```
 
 #### Parameters

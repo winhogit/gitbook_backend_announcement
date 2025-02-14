@@ -21,4 +21,4 @@ public updateContent(string $title, string $content, string $backendLang, int $a
 
 #### **Return Value**
 
-<table data-full-width="false"><thead><tr><th width="371">type</th><th>comment</th></tr></thead><tbody><tr><td>bool</td><td>是否完成</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="371">type</th><th>comment</th></tr></thead><tbody><tr><td>boolean</td><td>是否完成</td></tr></tbody></table>

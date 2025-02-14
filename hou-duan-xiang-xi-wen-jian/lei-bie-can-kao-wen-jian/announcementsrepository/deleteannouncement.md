@@ -16,4 +16,4 @@ public deleteAnnouncement(int $announcementId): bool
 
 #### **Return Value**
 
-<table data-full-width="false"><thead><tr><th width="400">type</th><th>comment</th></tr></thead><tbody><tr><td>bool</td><td>刪除成功與否</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="400">type</th><th>comment</th></tr></thead><tbody><tr><td>boolean</td><td>刪除成功與否</td></tr></tbody></table>

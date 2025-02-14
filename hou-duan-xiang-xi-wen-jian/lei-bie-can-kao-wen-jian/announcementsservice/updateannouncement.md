@@ -7,7 +7,14 @@ description: 建立、更新，單一公告區塊資料
 
 
 ```php
-public updateAnnouncement(?int $announcementId, bool $status, bool $allSites, bool $allLang, array $contents, array $sites): DBCollection
+public updateAnnouncement(
+    ?int $announcementId,
+    bool $status,
+    bool $allSites,
+    bool $allLang,
+    array $contents,
+    array $sites
+): Announcements
 ```
 
 #### Parameters
@@ -23,4 +30,4 @@ public updateAnnouncement(?int $announcementId, bool $status, bool $allSites, bo
 
 #### **Return Value**
 
-<table><thead><tr><th width="359">type</th><th>comment</th></tr></thead><tbody><tr><td>Illuminate\Database\Eloquent\Collection</td><td><p>公告區塊資料</p><p>{ id, status, all_sites, all_lang }</p></td></tr></tbody></table>
+<table><thead><tr><th width="359">type</th><th>comment</th></tr></thead><tbody><tr><td>App\Models\Announcements</td><td><p>公告區塊資料</p><p>{ id, status, all_sites, all_lang,... }</p></td></tr></tbody></table>

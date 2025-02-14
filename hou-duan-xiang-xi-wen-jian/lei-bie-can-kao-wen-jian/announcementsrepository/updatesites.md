@@ -19,4 +19,4 @@ public updateSites(int $announcementId, array $siteIds): bool
 
 #### **Return Value**
 
-<table><thead><tr><th width="357">type</th><th>comment</th></tr></thead><tbody><tr><td>bool</td><td>是否完成</td></tr></tbody></table>
+<table><thead><tr><th width="357">type</th><th>comment</th></tr></thead><tbody><tr><td>boolean</td><td>是否完成</td></tr></tbody></table>
