@@ -1,11 +1,11 @@
 ---
-description: 關聯後台首頁顯示公告區塊內容資料存取器
+description: 關聯後台首頁顯示公告區塊內容資料內文存取器
 ---
 
 # getContentAttribute()
 
 ```php
-public getContentAttribute(): DBCollection
+內文public getContentAttribute(): string
 ```
 
 #### Parameters
@@ -14,5 +14,4 @@ public getContentAttribute(): DBCollection
 
 #### **Return Value**
 
-<table><thead><tr><th width="362">type</th><th>comment</th></tr></thead><tbody><tr><td>array</td><td>公告區塊內容<br>{ title, content }</td></tr></tbody></table>
-
+<table><thead><tr><th width="362">type</th><th>comment</th></tr></thead><tbody><tr><td>string</td><td>公告區塊內容內文</td></tr></tbody></table>

@@ -64,9 +64,11 @@ classDiagram
             # array $hidden
             + relatedContent()
             + relatedSites()
+            + getTitleAttribute()
             + getContentAttribute()
             + getContentsAttribute()
             + getSitesAttribute()
+            - getDisplayContent()
         }
         class AnnouncementsContent {
             <<Model>>

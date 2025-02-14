@@ -56,6 +56,7 @@ protected array $hidden = [
 
 * [relatedContent()](relatedcontent.md)
 * [relatedSites()](relatedsites.md)
+* [getTitleAttribute()](gettitleattribute.md)
 * [getContentAttribute()](getcontentattribute.md)
 * [getContentsAttribute()](getcontentsattribute.md)
 * [getSitesAttribute()](getsitesattribute.md)
