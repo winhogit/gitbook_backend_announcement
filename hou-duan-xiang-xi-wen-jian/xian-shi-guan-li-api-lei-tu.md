@@ -11,7 +11,6 @@ config:
 ---
 classDiagram
     AnnouncementsController ..> AnnouncementsService
-    AnnouncementsController ..> AnnouncementsRepository
     AnnouncementsService ..> AnnouncementsRepository
     AnnouncementsRepository ..> Announcements
     AnnouncementsRepository ..> AnnouncementsContent
