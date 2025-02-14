@@ -42,7 +42,7 @@ App\Traits\RepositoryTrait
 * [\_\_construct()](__construct.md)
 * [factory()](factory.md)
 * [status()](status.md)
-* [deleteAnnouncement()](deleteannouncement.md)
 * [updateContent()](updatecontent.md)
 * [deleteContent()](deletecontent.md)
 * [updateSites()](updatesites.md)
+* [deleteAnnouncement()](deleteannouncement.md)

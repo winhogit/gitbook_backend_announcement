@@ -37,6 +37,7 @@ App\Repositories\AnnouncementsRepository $announcementsRepository
 ### Methods
 
 * [\_\_construct()](__construct.md)
+* [display()](display.md)
 * [list()](list.md)
 * [fetch()](display.md)
 * [createAnnouncement()](createannouncement.md)
