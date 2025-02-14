@@ -65,6 +65,7 @@ classDiagram
             # array $hidden
             + relatedContent()
             + relatedSites()
+            + getContentAttribute()
             + getContentsAttribute()
             + getSitesAttribute()
         }
