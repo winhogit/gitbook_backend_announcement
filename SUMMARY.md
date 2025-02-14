@@ -45,6 +45,6 @@
       * [relatedSite()](hou-duan-xiang-xi-wen-jian/lei-bie-can-kao-wen-jian/announcementssites/relatedsite.md)
   * [後端 API](hou-duan-xiang-xi-wen-jian/hou-duan-api.md)
 * [前端詳細文件](qian-duan-xiang-xi-wen-jian/README.md)
-  * [前端相關設計規範](qian-duan-xiang-xi-wen-jian/qian-duan-xiang-guan-she-ji-gui-fan.md)
+  * [前端相關注意事項](qian-duan-xiang-xi-wen-jian/qian-duan-xiang-guan-zhu-yi-shi-xiang.md)
   * [React 元件圖](qian-duan-xiang-xi-wen-jian/react-yuan-jian-tu.md)
   * [前端事件、狀態循序圖](qian-duan-xiang-xi-wen-jian/qian-duan-shi-jian-zhuang-tai-xun-xu-tu.md)
